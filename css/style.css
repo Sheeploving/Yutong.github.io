@@ -1,0 +1,105 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    background: #333;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.button {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007acc;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #005f99;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Project and Experience Styling */
+.project, #experience div {
+    background: #f8f8f8;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3, #experience h3 {
+    color: #007acc;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    margin: 10px 0;
+}
+
+/* Contact Links */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+    #home p {
+        font-size: 1rem;
+    }
+}
