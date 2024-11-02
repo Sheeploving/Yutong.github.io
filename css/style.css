@@ -12,12 +12,11 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Section Styling */
+/* General Section Styling */
 section {
     padding: 60px 20px;
     max-width: 800px;
     margin: auto;
-    text-align: center;
 }
 
 /* Home Section */
@@ -26,6 +25,7 @@ section {
     color: #fff;
     padding-top: 100px;
     padding-bottom: 100px;
+    text-align: center;
 }
 
 #home h1 {
@@ -52,15 +52,45 @@ section {
     background-color: #005f99;
 }
 
-/* Headings */
-h2 {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 2rem;
+/* About Section Styling */
+#about {
+    text-align: left; /* Left-aligns text in the "About Me" section */
 }
 
-/* Project and Experience Styling */
-.project, #experience div {
+.profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    float: left; /* Aligns the photo to the left of the text */
+    margin-right: 15px; /* Adds space between photo and text */
+    margin-bottom: 10px;
+}
+
+/* Heading Styling */
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Paragraph Text Styling */
+p {
+    text-align: left; /* Ensures all paragraphs are left-aligned */
+    line-height: 1.6;
+}
+
+/* Interest & Research Section Styling */
+#interest, #research, #research-experience {
+    background: #f8f8f8;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Research Experience Entry Styling */
+.research {
     background: #f8f8f8;
     padding: 20px;
     margin: 10px 0;
@@ -68,13 +98,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.project h3, #experience h3 {
-    color: #007acc;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-
-/* Skills Section */
+/* Skills Section Styling */
 #skills ul {
     list-style: none;
     padding: 0;
@@ -84,7 +108,7 @@ h2 {
     margin: 10px 0;
 }
 
-/* Contact Links */
+/* Contact Links Styling */
 a {
     color: #007acc;
     text-decoration: none;
@@ -102,4 +126,9 @@ a:hover {
     #home p {
         font-size: 1rem;
     }
+    .profile-photo {
+        width: 100px; /* Smaller profile photo for mobile view */
+        margin-right: 10px;
+    }
 }
+
