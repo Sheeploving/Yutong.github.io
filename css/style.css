@@ -14,33 +14,51 @@ body {
 
 /* General Section Styling */
 section {
-    padding: 60px 20px;
-    max-width: 800px;
-    margin: auto;
+    max-width: 800px; /* Sets a consistent width for all sections */
+    margin: 0 auto; /* Centers the section horizontally */
+    padding: 40px 20px; /* Adds some padding inside the section */
+    text-align: left; /* Ensures text is aligned to the left within each section */
 }
 
-/* Home Section */
-#home {
-    background: #333;
-    color: #fff;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
+/* Heading Styling */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-#home h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+/* About Section with Profile Photo */
+#about {
+    display: flex;
+    align-items: flex-start; /* Aligns photo and text at the top */
+    gap: 15px; /* Adds space between photo and text */
 }
 
-#home p {
-    font-size: 1.2rem;
-    color: #ddd;
+.profile-photo {
+    width: 150px; /* Adjust the size of the profile photo */
+    height: auto;
+    border-radius: 50%;
 }
 
-.button {
+/* Interest, Research Experience, and Other Sections */
+#interest, #research, #research-experience, #skills, #experience, #resume {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centers the section with margin on both sides */
+    max-width: 800px; /* Keeps a consistent width for centering */
+}
+
+/* Paragraph Text Styling */
+p {
+    line-height: 1.6;
+}
+
+/* Link Button Styling */
+a.button {
     display: inline-block;
-    margin: 20px 10px;
+    margin-top: 10px;
     padding: 10px 20px;
     color: white;
     background-color: #007acc;
@@ -48,87 +66,23 @@ section {
     border-radius: 5px;
 }
 
-.button:hover {
+a.button:hover {
     background-color: #005f99;
-}
-
-/* About Section Styling */
-#about {
-    text-align: left; /* Left-aligns text in the "About Me" section */
-}
-
-.profile-photo {
-    width: 150px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 50%; /* Circular image */
-    float: left; /* Aligns the photo to the left of the text */
-    margin-right: 15px; /* Adds space between photo and text */
-    margin-bottom: 10px;
-}
-
-/* Heading Styling */
-h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-/* Paragraph Text Styling */
-p {
-    text-align: left; /* Ensures all paragraphs are left-aligned */
-    line-height: 1.6;
-}
-
-/* Interest & Research Section Styling */
-#interest, #research, #research-experience {
-    background: #f8f8f8;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Research Experience Entry Styling */
-.research {
-    background: #f8f8f8;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Skills Section Styling */
-#skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-#skills li {
-    margin: 10px 0;
-}
-
-/* Contact Links Styling */
-a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    #home h1 {
-        font-size: 2rem;
-    }
-    #home p {
-        font-size: 1rem;
+    #about {
+        flex-direction: column;
+        text-align: center;
     }
     .profile-photo {
-        width: 100px; /* Smaller profile photo for mobile view */
-        margin-right: 10px;
+        width: 100px;
+        margin: 0 auto;
+    }
+    section {
+        padding: 20px;
     }
 }
+
 
